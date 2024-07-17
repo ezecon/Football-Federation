@@ -31,17 +31,12 @@ export default function App() {
             </li>
             <li>
               <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#skill">
-                Skill
+                Player
               </a>
             </li>
             <li>
               <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#contact">
-                Contact
+                Events
               </a>
             </li>
           </ul>
@@ -61,13 +56,10 @@ export default function App() {
             About
           </a>
           <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#skill" onClick={toggleMenu}>
-            Skill
+            Players
           </a>
           <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#projects" onClick={toggleMenu}>
-            Projects
-          </a>
-          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#contact" onClick={toggleMenu}>
-            Contact
+            Events
           </a>
         </div>
       )}

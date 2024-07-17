@@ -149,9 +149,8 @@
 	color: rgb(88, 88, 88);
 	background-color: transparent;
   }
-  
   /* Adjusted overlay to cover entire section */
-  #hero::after {
+#hero::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -167,7 +166,10 @@
 	max-width: 100%; /* Full width on smaller screens */
 	margin: 0 auto;
 	padding: 0 20px; /* Reduced padding for smaller screens */
-	justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
   }
   
   /* Adjusted text sizes for responsiveness */
@@ -180,6 +182,7 @@
 	animation-delay: 1s;
   }
   
+  /* Adjusted text reveal animations */
   #hero h1:nth-child(1) {
 	animation-delay: 1s;
   }
@@ -193,6 +196,7 @@
 	animation-delay: 3s;
   }
   
+  /* Adjusted span animations */
   #hero h1 span {
 	position: absolute;
 	top: 0;
@@ -239,6 +243,7 @@
 	  color: rgb(255, 255, 255);
 	}
   }
+  
   
 
 /* CSS animation */
