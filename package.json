@@ -23,7 +23,6 @@
     "jwt-decode": "^4.0.0",
     "mdb-react-ui-kit": "^8.0.0",
     "npm": "^10.8.1",
-    "particles.js": "^2.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,8 +33,6 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.24.1",
     "react-to-print": "^2.15.1",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles-slim": "^2.12.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {
