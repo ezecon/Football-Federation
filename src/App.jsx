@@ -65,11 +65,11 @@ export default function App() {
           </a>
         </div>
       )}
-      <div id="home" className="h-2/3">
-        <HeroSection />
-      </div>
-      <div id="home" className="">
-        <Players />
+        <div id="home" className="h-2/3">
+          <HeroSection />
+        </div>
+        <div id="home" className="">
+           <Players home='home' />
       </div>
     </div>
   );
