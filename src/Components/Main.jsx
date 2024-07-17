@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { Button } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import About from './About';
 
 export default function Main() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,6 +71,9 @@ export default function Main() {
       )}
         <div id="home" className="h-2/3">
           <HeroSection />
+        </div>
+        <div>
+          <About/>
         </div>
         <div id="home" className="flex flex-col items-center">
           <Players home='home' />

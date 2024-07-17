@@ -13,10 +13,11 @@ export default function Players({ home }) {
   const displayedPlayers = home ? players.slice(0, 5) : players;
 
   return (
-    <div className="py-16">
-      <h1 className="font-playwrite-gb-s text-center text-3xl mb-8">PLAYERS</h1>
-      <div className="w-full h-full mx-auto overflow-none px-4 sm:px-8">
-        <div className="grid gap-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pl-16">
+    <div className="py-16 water-text">
+      <h2 className="font-playwrite-gb-s text-center text-3xl mb-8">PLAYERS</h2>
+      <h2 className="font-playwrite-gb-s text-center text-3xl mb-8">PLAYERS</h2>
+      <div className="w-full h-full mx-auto overflow-none px-4 sm:px-8 pt-16">
+        <div className="grid gap-16 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 pl-8">
           {displayedPlayers.map((player, index) => (
             <Card
               key={index}
