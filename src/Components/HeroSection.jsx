@@ -28,9 +28,9 @@ export function HeroSection() {
       </Carousel>
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center" id="hero">
-          <h1 className="sm:text-5xl md:text-6xl lg:text-7xl playwrite-gb-s-regular">Islamia, <span></span></h1>
-          <h1 className="sm:text-5xl md:text-6xl lg:text-7xl playwrite-gb-s-regular">Football<span></span></h1>
-          <h1 className="mb-8 sm:text-5xl md:text-6xl lg:text-7xl playwrite-gb-s-regular">Federation<span></span></h1>
+          <h1 className="sm:text-5xl md:text-6xl lg:text-7xl playwrite-cl-title ">Islamia, <span></span></h1>
+          <h1 className="sm:text-5xl md:text-6xl lg:text-7xl playwrite-cl-title ">Football<span></span></h1>
+          <h1 className="mb-8 sm:text-5xl md:text-6xl lg:text-7xl playwrite-cl-title ">Federation<span></span></h1>
         </div>
       </div>
     </div>
