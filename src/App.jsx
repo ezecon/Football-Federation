@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { HeroSection } from './Components/HeroSection';
+import Players from './Components/Players';
+import { useState } from 'react';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,6 +67,9 @@ export default function App() {
       )}
       <div id="home" className="h-2/3">
         <HeroSection />
+      </div>
+      <div id="home" className="">
+        <Players />
       </div>
     </div>
   );
