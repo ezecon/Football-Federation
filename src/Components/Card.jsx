@@ -3,7 +3,7 @@
 export default function Card({name, img, age, height, weight, position}) {
     const player = name;
   return (
-    <div className="flex items-center justify-center bg-center" style={{ backgroundImage: "url('" }}>
+    <div className="flex items-center justify-center bg-center" >
       <div className="relative w-72 h-[485px] bg-cover bg-center p-14" style={{ backgroundImage: "url('https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png')" }}>
         <div className="relative flex text-yellow-400 px-6">
           <div className="w-52 h-52 mx-auto overflow-none ">
