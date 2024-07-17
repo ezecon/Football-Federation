@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div className="mt-16 py-8 flex flex-col lg:flex-row bg-black text-white">
       <div className="lg:w-1/2 p-8 lg:p-16 ">
-        <h4>All rights reserved by,</h4>
+        <h4 className="text-center">All rights reserved by</h4>
         <div className="flex flex-col items-center lg:items-start mt-4 animated">
           <img
             src="https://i.ibb.co/Kbxz0NB/438301459-2478369702550969-5250834645199073879-n.jpg"
