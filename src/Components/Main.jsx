@@ -41,7 +41,7 @@ export default function Main() {
               </a>
             </li>
             <li>
-              <a className="text-[#585858] hover:underline hover:underline-offset-4 hover:decoration-[#585858]" href="#projects">
+              <a className="text-[#585858] hover:underline hover:underline-offset-4 hover:decoration-[#585858]" href="/events">
                 Events
               </a>
             </li>
@@ -64,7 +64,7 @@ export default function Main() {
           <a className="text-[#585858] hover:underline hover:underline-offset-4 hover:decoration-[#585858]" href="/players" onClick={toggleMenu}>
             Players
           </a>
-          <a className="text-[#585858] hover:underline hover:underline-offset-4 hover:decoration-[#585858]" href="#projects" onClick={toggleMenu}>
+          <a className="text-[#585858] hover:underline hover:underline-offset-4 hover:decoration-[#585858]" href="/events" onClick={toggleMenu}>
             Events
           </a>
         </div>

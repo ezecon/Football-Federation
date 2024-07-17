@@ -2,12 +2,12 @@ export default function Footer() {
   return (
     <div className="mt-16 py-8 flex flex-col lg:flex-row bg-black text-white">
       <div className="lg:w-1/2 p-8 lg:p-16 ">
-        <h4 className="text-center">All rights reserved by</h4>
         <div className="flex flex-col items-center lg:items-start mt-4 animated">
+        <h4 className="text-center">All rights reserved by</h4>
           <img
             src="https://i.ibb.co/Kbxz0NB/438301459-2478369702550969-5250834645199073879-n.jpg"
             alt="Md. Econozzaman Econ"
-            className="w-24 h-32 lg:w-48 lg:h-60"
+            className="w-24 h-32 lg:w-48 lg:h-60 pt-2"
           />
           <h4 className="mt-4 text-lg font-semibold">Md. Econozzaman Econ</h4>
           <p>Department of Computer Science & Engineering</p>
