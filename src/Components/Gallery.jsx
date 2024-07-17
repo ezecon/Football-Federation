@@ -4,6 +4,7 @@ export default function Gallery() {
     return (
         <div className="py-28 water-text">
             <h2 className="font-playwrite-gb-s text-center text-3xl mb-8">Gallery</h2>
+            <h2 className="font-playwrite-gb-s text-center text-3xl mb-8">Gallery</h2>
             
             <div className="flex flex-col lg:flex-row mt-8 lg:mt-28 p-4 lg:p-16 gap-8">
                 <div className="w-full lg:w-5/12">
