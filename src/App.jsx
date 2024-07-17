@@ -1,35 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { HeroSection } from './Components/HeroSection';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='bg-none'>
+      <div className="navbar flex flex-wrap justify-between items-center px-4 py-2">
+        <div className="flex-1 water-text text-center relative md:left-[-28rem]">
+          <h2 className="font-bold sm:text-lg md:text-2xl">IFF</h2>
+          <h2 className="font-bold sm:text-lg md:text-2xl">IFF</h2>
+        </div>
+        <div className="flex-none hidden md:block">
+          <ul className="menu menu-horizontal space-x-2">
+            <li>
+              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#skill">
+                Skill
+              </a>
+            </li>
+            <li>
+              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="flex-none md:hidden">
+          <button onClick={toggleMenu} className="text-[goldenrod] focus:outline-none">
+            <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="lg" />
+          </button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      {isMenuOpen && (
+        <div className="md:hidden flex flex-col space-y-2 px-4 py-2">
+          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#home" onClick={toggleMenu}>
+            Home
+          </a>
+          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#about" onClick={toggleMenu}>
+            About
+          </a>
+          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-goldenrod" href="#skill" onClick={toggleMenu}>
+            Skill
+          </a>
+          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#projects" onClick={toggleMenu}>
+            Projects
+          </a>
+          <a className="text-[goldenrod] hover:underline hover:underline-offset-4 hover:decoration-[goldenrod]" href="#contact" onClick={toggleMenu}>
+            Contact
+          </a>
+        </div>
+      )}
+      <div id="home" className="h-2/3">
+        <HeroSection />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
