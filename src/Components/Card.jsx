@@ -37,7 +37,6 @@ export default function Card({name, img, age, height, weight, position}) {
           </div>
         </div>
       </div>
-      <div className="fixed bottom-5 right-5 text-sm text-gray-500">@selimdoyranli</div>
     </div>
   );
 }
